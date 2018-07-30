@@ -1,0 +1,11 @@
+﻿@model TestApp.Models.Picture
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Dog Pound</h2>
+
+<img class="dogPic" src="@Model.message" />
+
+@Html.ActionLink("Not this one.", "Index", "Pictures", null, new { @class = "btn btn-primary" })
